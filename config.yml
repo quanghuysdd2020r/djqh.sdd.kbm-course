@@ -1,0 +1,16 @@
+title: ĐQH.SDD.KBM
+description: Hack IOE 2020
+template:
+  repo: djqh.sdd.kbm-template
+  name: djqh.sdd.kbm
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
